@@ -1,0 +1,169 @@
+header{
+    padding: 30px 15px 0px;
+}
+
+header h1{
+    color: #e50914;
+    font-size: 38px;
+    font-weight: 200;
+    text-align: center;
+}
+
+.App-movie{
+    margin: 0 auto;
+}
+
+section{
+    padding: 15px;
+}
+
+.Filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.searchbox{
+    padding: 10px;
+    margin-right: 15px;
+    border: none; outline: none; background: none;
+    background-color: #EEE;
+    border-radius: 80px;
+    color: #53565A;
+    font-size: 15px;
+    font-weight: 50;
+    transition: 0.4s ease-out;
+}
+.searchbox:focus{
+    box-shadow: 0px 0px 8px 3px #b4b4b4;
+}
+
+.App-List{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px 50px;
+    
+}
+.movie{
+    background-color: #333;
+    border-radius: 3px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1) ;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    width: 260px ;
+    cursor:pointer;
+}
+
+.movie img{
+    width: 100%;
+    height: 100%;
+}
+
+.movie-info{
+    display: block;
+    text-align: center;
+    padding: 1rem;
+       
+}
+.movie-info h3{
+    margin: 0;
+}
+.movie-over{
+    background-color: white;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.1) ;
+    color: black;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    transform: translateY(102%);
+    max-height: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+.movie:hover .movie-over{
+    transform: translateY(0%);
+}
+.movie:hover p{
+    font-family: Arial, Helvetica;
+    font-size: 14px;
+}
+
+.btn-container{
+    position: fixed;
+    text-align: center;
+    opacity: .9;
+    bottom: 50px;
+    right: 50px;
+}
+
+.Add-Button{
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    background: #e50914;
+    color: #FFF;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    font-size: 30px;
+    font-family: Inconsolata,"Andale Mono","Courier New",Courier,'Yu Gothic UI',monospace;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+    transition: .4s;
+  }
+  
+.Add-Button:hover{
+      background: #a8030b;
+}
+
+.Paper{
+    font-family: "Open Sans", Helvetica, sans-serif;
+    display: block;
+    position: 'absolute';
+    background: #fff;
+    border-radius: 10px;
+    margin: 50px auto;
+    width: 340px;
+    text-align: center;
+    padding: 12px 10px 20px;
+}
+
+.TextField{
+    width: 75%;
+    height: 50px;
+    display: block;
+    margin: 0 auto 15px;
+    padding: 0 15px;
+    border: none;
+    color: #555;
+    border-bottom: 2px solid #ebebeb;}
+
+    .TextField:focus {
+        outline: none;
+        border-bottom-color: #555 !important;
+    }
+    .TextField:hover {
+        border-bottom-color: #dcdcdc;
+    }
+    .TextField:invalid {
+        box-shadow: none;
+    }
+
+
+h4{
+    font-size: 39px;
+    color: #e50914;
+    line-height: 1.2;
+    padding-bottom: 30px;
+}
+
+.Link{
+    color: #FFF;
+}
+    
